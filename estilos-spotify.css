@@ -1,0 +1,466 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background:green;
+}
+
+header {
+    width:100%;
+    height:80px;
+    position:fixed;
+    z-index: 100;
+}
+
+    .black {
+        background-color: rgba(0,0,0,.6);
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease;
+}
+
+    header .container-header{
+        display: flex;
+        justify-content: space-between;
+        width:60%;
+        margin: 0 19%;
+        padding:0 15px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    
+
+        header .container-header .imagen {
+            width:50%;
+            height:80px;
+            /* Flex */
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:flex-start;
+            align-items: center;
+        }
+
+            header .container-header .imagen img {
+                width:135px;
+                height:75px;
+                align-items: center;
+            } 
+
+        header .container-header .botones {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center; /* buscar */
+            justify-content: center;
+            width:50%;
+            height:80px;
+            font-size: 14.4px;
+            font-weight: bold;
+        }
+
+            header .container-header .botones li {
+                list-style: none;
+                padding: 28px 17px;
+                letter-spacing: 0.3px;
+            }
+
+                header .container-header .botones li:nth-last-child(1) {
+                list-style: none;
+                padding: 28px 0 28px 17px;
+                }
+
+                header .container-header .botones li a {
+                    text-decoration: none;
+                    color:#fff;
+                }
+
+            header .container-header .botones h4 {
+                color:#fff;
+                margin:32px 17px;
+            }
+
+.section-1 {
+    width:100%;
+    height:543px;
+    background-color: #509BF5;
+    color:#fff;
+}
+
+    .section-1 .article-1 {
+        width:60%;
+        height:100%;
+        padding:80px 15px 35px 15px;
+        margin: 0 19.5%;     
+    }
+
+        .section .article-1 .divisor-1 {
+            width:100%;
+            height:380px;
+            background-color: black;
+            display:block;
+        }
+            .section-1 .article-1 .divisor-1 h1 {
+                font-size: 75px;
+                width:100%;
+                height:185px;
+                margin-top: 55px;
+            }
+
+            .section-1 .article-1 .divisor-1 .precio-principal {
+                font-size: 30px;
+                margin:30px 0 0;
+            }
+
+            .section-1 .article-1 .divisor-1 .ver-planes {
+                width:100%;
+                height:48px;
+                margin:32px 0 0;
+            }
+
+                .section-1 .article-1 .divisor-1 .ver-planes h4 {
+                    width:200px;
+                    height:48px;
+                    font-size: 14px;
+                    letter-spacing: 1.5px;
+                    background-color: rgb(29, 185, 84);
+                    border-radius: 500px;
+                    -webkit-border-radius: 500px;
+                    -moz-border-radius: 500px;
+                    -ms-border-radius: 500px;
+                    -o-border-radius: 500px;
+
+                    display:flex;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+
+                    .section-1 .article-1 .divisor-1 .ver-planes h4 a {
+                        text-decoration: none;
+                        color:#fff;
+                    }
+
+                    .section-1 .article-1 .divisor-1 .ver-planes h4:hover {
+                        text-decoration: none;
+                        background-color: #1ED760;
+                    }
+
+            .section-1 .article-1 .divisor-1 .terminos-principal {
+                width:614px;
+                height:18px;
+                position: relative;
+                top:30px;
+            }
+
+                .section-1 .article-1 .divisor-1 .terminos-principal h4 {
+                    font-size: 10.7px;
+                    letter-spacing: 0.2px;
+                }
+
+                .section-1 .article-1 .divisor-1 .terminos-principal h4 a {
+                    color: #fff
+                }
+
+.section-2 {
+    background-color: #fff;
+    width:100%;
+    height:606px;
+}
+
+    .section-2 .article-2 {
+        width:1170;
+        height:606px;
+        padding:75px 15px;
+        margin: 0 19.3%;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+        .section-2 .article-2 h1 {
+            padding: 0 0 48px 0;
+            font-size: 45px;
+            color:#000;
+            font-weight:bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-2 .article-2 .contenedor-tarjetas{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top:80px;
+        }
+
+            .section-2 .article-2 .contenedor-tarjetas .tarjetas {
+                width:25%;
+                height:302px;
+            }
+
+                .section-2 .article-2 .contenedor-tarjetas .tarjetas .imagen {
+                    width:142px;
+                    height:142px;
+                    margin:0 71.5px 40px;
+                    background-color: #f8f8f8; 
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+
+                .section-2 .article-2 .contenedor-tarjetas .tarjetas .divisor-2 {
+                    display:flex;
+                    flex-direction: column;                   
+                }
+
+                    .section-2 .article-2 .contenedor-tarjetas .tarjetas .divisor-2 h4{
+                        width:100%;
+                        margin: 0 0 10px;
+                        font-size: 21px;
+                        text-align: center;
+                        line-height: 30px;
+                    }
+
+                    .section-2 .article-2 .contenedor-tarjetas .tarjetas .divisor-2 p{
+                        margin: 0 21.375px;
+                        font-size: 14px;
+                        text-align: center;
+                        line-height: 20px;
+                        letter-spacing: 0.5px;
+                    }
+
+.section-3 {
+    background-color: #f8f8f8;
+    height:1154px;
+    width:100%;
+}
+
+    .section-3 .article-3 {
+        margin:0 19.3%;
+        padding:75px 15px;
+    }
+
+        .section-3 .article-3 h2 {
+            font-size: 40px;
+            text-align: center;
+            padding:0 0 40px;
+        }
+
+        .section-3 .article-3 h3 {
+            font-size: 16px;
+            text-align: center;
+            padding:0 0 16px;
+            margin:10px 0;
+            font-weight:500;
+            letter-spacing: 0.5px;
+        }
+
+        .section-3 .article-3 .planes {
+            width:1140px;
+            height:796px;
+            position:relative;
+            top:50px;
+            display:flex;
+            justify-content: space-around;
+        }
+
+            .section-3 .article-3 .planes .plan {
+                width:269px;
+                height:796px;
+                background-color:#fff;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                display:block;
+            }
+
+                .section-3 .article-3 .planes .plan .imagen-plan {
+                    width:100%;
+                    height:140px;
+                    background-color:#F99113;
+                    border-radius:10px 10px 0 0;
+                    -webkit-border-radius:10px 10px 0 0;
+                    -moz-border-radius:10px 10px 0 0;
+                    -ms-border-radius:10px 10px 0 0;
+                    -o-border-radius:10px 10px 0 0;
+}
+
+                    .section-3 .article-3 .planes .plan .imagen-plan p {
+                        font-size:14px;
+                        background-color:#2e77d0;
+                        color:#fff;
+                        padding:4px 8px;
+                        margin: 0 0 20px;
+                        width:93px;
+                        height:30px;
+                        position:relative;
+                        top:65%;
+                        left:5%;
+                        display:flex;
+                        text-align: center;
+                        align-items: center;
+                        border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+}
+
+                    .section-3 .article-3 .planes .plan div .cajita {
+                        padding:16px 16px 10px;
+
+                    }
+
+                        .section-3 .article-3 .planes .plan div .cajita h3 {
+                            font-size:24px;
+                            color:#000;
+                            padding:0 0 24px;
+                            margin: 0 0 5px;
+                            text-align:left;
+                            font-weight:bold;
+                        }
+
+                        .section-3 .article-3 .planes .plan div .cajita p {
+                            font-size:15px;
+                            letter-spacing: 0.8px;
+                        }
+
+                        .section-3 .article-3 .planes .plan div .cajita p:nth-last-child(2) {
+                            margin:0 0 2px;
+                        }
+
+                .section-3 .article-3 .planes .plan .separador {
+                    text-align:center;
+                    color:#f8f8f8
+                }
+
+                .section-3 .article-3 .planes .plan .descripcion {
+                    padding:20px 16px 16px;
+                    width:269px;
+                    height:285px;
+                }
+
+                    .section-3 .article-3 .planes .plan .descripcion p {
+                        list-style:none;
+                        padding:0;
+                        margin:0 0px;
+                        line-height:23px;
+                        width:100%;
+                        text-align: left;
+                    }
+
+                .section-3 .article-3 .planes .plan .boton-comenzar {
+                    width:100%;
+                    height:64px;
+                    margin:0;
+                    padding:0 16px 16px;
+                    text-align: center;
+                }
+
+                    .section-3 .article-3 .planes .plan .boton-comenzar a {
+                        background:#1db954;
+                        width:100%;
+                        height:100%;
+                        letter-spacing: 2px;
+                        position: relative;
+                        top:16px;
+                        font-weight: bold;
+                        padding:17px 70px;
+                        text-decoration: none;
+
+                        color:#fff;
+                        font-size:14px;
+                        border-radius: 500px;
+                        -webkit-border-radius: 500px;
+                        -moz-border-radius: 500px;
+                        -ms-border-radius: 500px;
+                        -o-border-radius: 500px;
+                        
+                    }
+
+                .section-3 .article-3 .planes .plan .terminos-planes {
+                    padding: 4px 16px 16px;
+                    width:100%;
+                    height:150px;
+                }
+
+                    .section-3 .article-3 .planes .plan .terminos-planes p {
+                        color:#919496;
+                        margin:6px 0 12px;
+                        font-size:11px;
+                        letter-spacing: 0.2px;
+                    }
+
+                    .section-3 .article-3 .planes .plan .terminos-planes p a {
+                        color:#919496;
+                        text-decoration:underline;
+                    }
+
+footer {
+    width:100%;
+    height:112px;
+    background-color:#000;
+    padding:30px 0 20px;
+}
+
+    footer .container {
+        height:62px;
+        margin: 0 19.3%;
+        padding:0 15px;
+        color:#fff;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size:12px;
+    }
+
+        
+
+        footer .container .otros {
+            width:60%;
+            padding:0 15px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+            footer .container .otros a {
+                padding:12px;
+                color:#919496;
+                text-decoration:none;
+            }
+
+            footer .container .otros a:nth-last-child(3){
+                padding:12px 12px 12px 0;
+            }
+
+        footer .container .footer-derecha {
+            width:40%;
+            padding:0 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            color:#919496;
+            letter-spacing: 0.3px;
+        }
+
+        footer .container .footer-derecha .pais {
+            padding:4.5px 0;
+        }
+
+        footer .container .footer-derecha .copyright{
+            padding:12px 0;
+            
+        }
+

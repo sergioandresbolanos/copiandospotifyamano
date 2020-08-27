@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="estilos-spotify.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if ($(window).scrollTop()>65){
+                $("#header-scroll").addClass("black");
+            }
+            else {
+                $("#header-scroll").removeClass("black");
+            }
+        })
+    </script>
+</head>
+<body>
+    <header id="header-scroll">
+        <div class="container-header">
+            <div class="imagen">
+                <img src="./logo.png" alt="logo-spotify">
+            </div>
+            
+            <ul class="botones">
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Descargar</a></li>
+                <h4>|</h4>
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="#">Iniciar Sesión</a></li>
+    
+            </ul>
+        </div>
+    </header>
+
+    <section class="section-1">
+        <article class="article-1">
+            <div class="divisor-1">
+                <h1>
+                    Obtén Premium gratis por 1 mes
+                </h1>
+                <div class="precio-principal">
+                    Después, solo $ 14900,00 al mes. Cancela cuando quieras.
+                </div>
+                <div class="ver-planes">
+                    <a href="#"></a><h4>VER PLANES</h4></a>
+                </div>
+                <div class="terminos-principal">
+                    <h4><a href="#">Aplican términos y condiciones.</a>
+                    El mes gratis no está disponible para los usuarios que ya hayan probado Premium.</h4>
+                </div>
+            </div>
+        </article>
+    </section>
+    
+    <section class="section-2">
+        <article class="article-2">
+            <h1>
+                ¿Por qué ser Premium?
+            </h1>
+
+            <article class="contenedor-tarjetas">
+
+                <div class="tarjetas">
+                    <div class="imagen"></div>
+                    <div class="divisor-2">
+                        <h4><strong>Descarga tu música</strong></h4>
+                        <p>Escúchala desde cualquier lugar.</p>
+                    </div>  
+                </div>
+    
+                <div class="tarjetas">
+                    <div class="imagen"></div>
+                    <div class="divisor-2">
+                        <h4><strong>Sin anuncios que interrumpan tu música.</strong></h4>
+                        <p>Disfruta de tu música sin interrupciones.</p>
+                    </div>
+                </div>
+    
+                <div class="tarjetas">
+                    <div class="imagen"></div>
+                    <div class="divisor-2">
+                        <h4><strong>Reproduce lo que quieras.</strong></h4>
+                        <p>Incluso en dispositivos móviles</p>
+                    </div>               
+                </div>
+    
+                <div class="tarjetas">
+                    <div class="imagen"></div>
+                    <div class="divisor-2">
+                        <h4><strong>Salta canciones de forma ilimitada.</strong></h4>
+                        <p>Solo haz click en Siguiente.</p>
+                    </div>    
+                </div>
+
+            </article>
+        </article>
+    </section>
+
+    <section class="section-3">
+        <article class="article-3">
+            <h2>Elige tu plan Premium</h2>
+            <h3>Escucha sin límites en tu teléfono, tus altavoces y otros dispositivos.</h3>
+            <div class="planes">
+
+                <div class="plan">
+                    <div class="individual">
+
+                        <div class="imagen-plan">
+                            <p>1 mes gratis</p>
+                        </div>
+
+                        <div class="cajita">
+                            <h3>Individual</h3>
+                            <p>Después de la prueba, solo $ 14900,00 al mes</p>
+                            <p>1 cuenta</p> 
+                        </div>
+     
+                    </div>
+                    <div class="separador">
+                        <h4>___________________________</h4>
+                    </div>
+                    <div class="descripcion">
+                        <p>Escucha música sin anuncios</p>
+                        <p>Reproduce tus canciones en cualquier lugar, incluso sin conexión</p>
+                        <p>Reproducción on-demand</p>
+                    </div>
+                    <div class="boton-comenzar">
+                        <a href="#"><span>COMENZAR</span></a>
+                    </div>
+                    <div class="terminos-planes">
+                        <p><a href="#">Aplican términos y condiciones.</a> El mes gratis no está disponible para los usuarios que ya hayan probado Premium.</p>
+                    </div>
+                </div>
+
+                <div class="plan">
+                    <div class="duo">
+                    
+                        <div class="imagen-plan">
+                            <p>1 mes gratis</p>
+                        </div>
+
+                        <div class="cajita">
+                            <h3>Duo</h3>
+                            <p>Después de la prueba, solo $ 18900,00 al mes</p>
+                            <p>2 cuentas</p>
+                        </div>
+                        
+                    </div>
+                    <div class="separador">
+                        <h4>___________________________</h4>
+                    </div>
+                    <div class="descripcion">
+                        <p>2 cuentas Premium para parejas que viven juntas</p>
+                        <p>Duo Mix: una playlist para dos, actualizada periódicamente con la música que más les gusta</p>
+                        <p>Reproducción de música sin anuncios, sin conexión y on-demand</p>
+                    </div>
+                    <div class="boton-comenzar">
+                        <a href="#"><span>COMENZAR</span></a>
+                    </div>
+                    <div class="terminos-planes">
+                        <p><a href="#">Aplican términos y condiciones.</a> El mes gratis no está disponible para los usuarios que ya hayan probado Premium.</p>
+                    </div>
+                </div>
+
+                <div class="plan">
+                    <div class="familiar">
+
+                        <div class="imagen-plan">
+                            <p>1 mes gratis</p>
+                        </div>
+
+                        <div class="cajita">
+                            <h3>Familiar</h3>
+                            <p>Después de la prueba, solo $ 22900,00 al mes</p>
+                            <p>Hasta 6 cuentas</p>
+                        </div>
+                        
+                    </div>
+                    <div class="separador">
+                        <h4>___________________________</h4>
+                    </div>
+                    <div class="descripcion">
+                        <p>6 cuentas Premium para familias que viven juntas</p>
+                        <p>Family Mix: una playlist para tu familia, actualizada periódicamente con la música que más les gusta</p>
+                        <p>Bloquea la música explícita</p>
+                        <p>Reproducción de música sin anuncions, sin conexión y on-demand</p>
+                    </div>
+                    <div class="boton-comenzar">
+                        <a href="#"><span>COMENZAR</span></a>
+                    </div>
+                    <div class="terminos-planes">
+                        <p><a href="#">Aplican términos y condiciones.</a> El mes gratis no está disponible para los usuarios que ya hayan probado Premium.</p>
+                    </div>
+                </div>
+
+                <div class="plan">
+                    <div class="universitario">
+
+                        <div class="imagen-plan">
+                            <p>1 mes gratis</p>
+                        </div>
+
+                        <div class="cajita">
+                            <h3>Universitario</h3>
+                            <p>Después de la prueba, solo $ 7490,00 al mes</p>
+                            <p>1 cuenta</p>
+                        </div>
+                        
+                    </div>
+                    <div class="separador">
+                        <h4>___________________________</h4>
+                    </div>
+                    <div class="descripcion">
+                        <p>Descuento especial para estudiantes universitarios elegibles</p>
+                        <p>Escucha música sin anuncios</p>
+                        <p>Reproduce tus canciones en cualquier lugar, incluso sin conexión</p>
+                        <p>Reproducción on-demand</p>
+                    </div>
+                    <div class="boton-comenzar">
+                        <div>
+                            <a href="#"><span>COMENZAR</span></a>
+                        </div>
+                    </div>
+                    <div class="terminos-planes">
+                        <p>Esta oferta está disponible únicamente para alumnos de instituciones de educación superior acreditadas. El mes gratis no está disponible para los usuarios que ya hayan probado Premium. Aplican los<a href="#">Términos y condiciones.</a> de la oferta Spotify Premium para Universitarios.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div class="container">
+            
+            <div class="otros">
+                <a href="#">Legal</a>
+                <a href="#">Cookies</a>
+                <a href="#">Sobre los anuncios</a>
+            </div>
+            <div class="footer-derecha">
+                <div class="pais">
+                    Colombia
+                </div>
+                <div class="copyright">
+                    © 2020 Spotify AB
+                </div>
+            </div> 
+        </div>
+    </footer>
+    
+</body>
+</html>
