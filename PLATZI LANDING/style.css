@@ -122,7 +122,7 @@ header {
 .carousel__container {
     white-space: nowrap;
     margin:70px 0px;
-    padding-bottom:10px;
+    padding-bottom:0px;
 }
 
 .carousel-item {
@@ -136,15 +136,22 @@ header {
     -o-border-radius:20px;
     -webkit-border-radius:20px;
     overflow:hidden;
-    margin-right:10px;
+    margin:0 8px;
     display:inline-block;
     cursor: pointer;
     transition:450ms;
-    transform-origin: center left; /*que empiece desde la izquierda*/
-    -webkit-transition:450ms;
+    transform-origin: center left;
+    /*queempiecedesdelaizquierda*/-webkit-transition:450ms;
     -moz-transition:450ms;
     -ms-transition:450ms;
     -o-transition:450ms;
+    -webkit-transition:450ms;
+   
+    transform:scale(1); /* esto se le tiene que aplicar al elemento sin hover a pesar de que sea redundante, para evitar el parpadeo al acercar el ratón, también se le pude añadir  */
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
 }
 
 .carousel-item:hover ~ .carousel-item{
@@ -155,9 +162,7 @@ header {
     -o-transform:translate3d(100px,0,0);
 }
 
-.carousel__container:hover .carousel-item {
-    opacity:0.3;
-}
+
 
 .carousel__container:hover .carousel-item:hover {
     transform:scale(1.5);
@@ -165,12 +170,55 @@ header {
     -moz-transform:scale(1.5);
     -ms-transform:scale(1.5);
     -o-transform:scale(1.5);
-    opacity: 1;
+    opacity:1;
 }
+
+.carousel__container:hover .carousel-item {
+    opacity:0.3;
+} /* esto es para que se pongan en oscuro los que no están sobre el cursor */
 
 .carousel-item img {
     background-repeat: no-repeat;
     background-position: center;
+    object-fit: cover; /* para que la imagen no quede alargada hacia un lado, sino que mantenga sus proporciones, esto sirve si le hubieramos dado  200 de width y 250 de height*/
     width:100%;
     height:100%;
+    position:relative;
+}    
+
+.carousel-item__details {
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    background:linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%); /*desdearriba,quehayaunagradientede0.9*/
+    font-size: 10px;
+    opacity:0;
+    transition: 450ms opacity;
+    -webkit-transition: 450ms opacity;
+    -moz-transition: 450ms opacity;
+    -ms-transition: 450ms opacity;
+    -o-transition: 450ms opacity;
+    padding:10px;
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0; 
 }
+
+.carousel-item__details:hover {
+    opacity: 1;
+}
+
+.carousel-item__details img {
+    background-repeat: no-repeat;
+    width:25px;
+    height:25px;
+}
+
+.carousel-item p {
+    color:#fff;
+}
+
+
