@@ -4,9 +4,26 @@
     box-sizing: border-box;
 }
 
+html,body{
+    overflow-x: hidden;
+    color:black;
+    font-family:'Opens Sans',helvetica;  
+    height:100%;
+    width:101%;
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     background-color: #8f57fd;
     font-family: 'Mulish', sans-serif;
+}
+
+body > h2 {
+    font-size:18px;
+    color:#fff;
+    margin-left:30px;
+    margin-top:20px;
 }
 
 header {
@@ -25,7 +42,7 @@ header {
     }
 
     .header__menu {
-        margin-right:30px;
+        margin-right:50px;
     }
 
     
@@ -221,4 +238,14 @@ header {
     color:#fff;
 }
 
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px;   
+    background:rgba(255,255,255,.2);
+    border-radius: 4px;
+}
 
+::-webkit-scrollbar:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}

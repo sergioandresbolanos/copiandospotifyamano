@@ -105,6 +105,15 @@ header {
             height:30px;
             margin-right: 10px;
         }
+        
+        .login__container--social-media > div > a {
+            color:#fff;
+            text-decoration: none;
+        }
+        
+        .login__container--social-media > div > a:hover {
+            text-decoration: underline;
+        }
 
     .login__container--register {
         font-size:14px;
