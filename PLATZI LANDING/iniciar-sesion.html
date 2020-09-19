@@ -8,14 +8,14 @@
 </head>
 <body>
     <header class="header">
-        <img src="./logo-platzi.png" alt="logo platzi" class="header__img">
+        <img tabindex="0" src="./logo-platzi.png" alt="logo platzi" class="header__img">
     </header>
     <section class="login">
         <div class="login__container">
-            <h2>Inicia sesión</h2>
+            <h2 tabindex="0">Inicia sesión</h2>
             <form class="login__container--form" action="">
-                <input class="input "type="text" placeholder="Correo electrónico" />
-                <input class="input "type="password" placeholder="Contraseña" />
+                <input aria-label="Correo" class="input "type="text" placeholder="Correo electrónico" />
+                <input aria-label="Contraseña" class="input "type="password" placeholder="Contraseña" />
                 <button class="button">Iniciar sesión</button>
                 <div class="login__container--remember-me">
                     <label> <!-- esto viene con un atributo llamado "for=""", pero ya que metimos el input adentro no es necesario -->
